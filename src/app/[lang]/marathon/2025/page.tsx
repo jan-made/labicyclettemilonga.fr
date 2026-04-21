@@ -11,10 +11,9 @@ import { useHeaderHeight } from '@/hooks/use-header-height.ts';
 import { unComputedHeaderHeight } from '@/common/constants.ts';
 import getLangPrefix from '@/helpers/lang-prefix.ts';
 
-const DynamicVenueMap = dynamic(
-  () => import('@/components/VenueMap.tsx'),
-  { ssr: false }
-);
+const DynamicVenueMap = dynamic(() => import('@/components/VenueMap.tsx'), {
+  ssr: false,
+});
 
 export default function GenericMarathon2025Page({
   params,
