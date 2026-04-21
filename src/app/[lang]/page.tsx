@@ -1,7 +1,7 @@
 'use client';
 
 import { defaultLocale } from '@/config/i18n.ts';
-import { use, useMemo } from 'react';
+import { use } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Params } from '@/types/props.ts';
@@ -11,15 +11,11 @@ import { milongaDates } from '@/app/[lang]/data.ts';
 import { useHeaderHeight } from '@/hooks/use-header-height.ts';
 import { unComputedHeaderHeight } from '@/common/constants.ts';
 
-export default function GenericHomePage({ params }: { params: Params }) {
-  const DynamicVenueMap = useMemo(
-    () =>
-      dynamic(() => import('@/components/VenueMap.tsx'), {
-        ssr: false,
-      }),
-    []
-  );
+const DynamicVenueMap = dynamic(() => import('@/components/VenueMap.tsx'), {
+  ssr: false,
+});
 
+export default function GenericHomePage({ params }: { params: Params }) {
   const lang = use(params).lang ?? defaultLocale;
   const headHeight = useHeaderHeight(unComputedHeaderHeight);
 

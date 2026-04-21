@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { use, useMemo } from 'react';
+import { use } from 'react';
 import { defaultLocale } from '@/config/i18n.ts';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Params } from '@/types/props.ts';
@@ -11,19 +11,15 @@ import { useHeaderHeight } from '@/hooks/use-header-height.ts';
 import { unComputedHeaderHeight } from '@/common/constants.ts';
 import getLangPrefix from '@/helpers/lang-prefix.ts';
 
+const DynamicVenueMap = dynamic(() => import('@/components/VenueMap.tsx'), {
+  ssr: false,
+});
+
 export default function GenericMarathon2025Page({
   params,
 }: {
   params: Params;
 }) {
-  const DynamicVenueMap = useMemo(
-    () =>
-      dynamic(() => import('@/components/VenueMap.tsx'), {
-        ssr: false,
-      }),
-    []
-  );
-
   const lang = use(params).lang ?? defaultLocale;
   const langPrefix = getLangPrefix(lang);
   const headHeight = useHeaderHeight(unComputedHeaderHeight);
