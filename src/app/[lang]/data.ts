@@ -56,7 +56,7 @@ export const milongaDates = [
     ends: new Date(2026, 3, 19, 1, 30, 0),
   },
   {
-    starts: new Date(2026, 5, 6, 19, 15, 0),
-    ends: new Date(2026, 5, 7, 1, 30, 0),
+    starts: new Date(2026, 5, 28, 19, 15, 0),
+    ends: new Date(2026, 5, 29, 1, 30, 0),
   },
 ];
