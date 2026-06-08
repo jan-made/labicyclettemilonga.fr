@@ -28,11 +28,11 @@
       "links": "Useful links",
       "newsletter": "Newsletter"
     },
-    "title": "Registration for marathon",
-    "title_": "Registration for the marathon is closed.",
+    "title_": "Registration for marathon",
+    "title": "Registration for the marathon is closed.",
     "signup": "Signup",
-    "description": "starts {{date, datetime}}",
-    "description_": "See you on the dancefloor.",
+    "description_": "starts {{date, datetime}}",
+    "description": "See you on the dancefloor.",
     "newsletter": "Subscribe for marathon news",
     "djs": "Marathon DJs:",
     "dj": {

@@ -84,7 +84,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               <div className='flex justify-center'>
                 <div className='relative mt-14'>
                   <div>
-                    {new Date() > registrationDate && (
+                    {/*new Date() > registrationDate && (
                       <div>
                         <a
                           className='inline-flex items-center justify-center rounded-md border border-transparent bg-[#5ECEF9] p-4 hover:bg-[#5ECEF9]/80'
@@ -96,7 +96,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
                           {t('marathon.signup')}
                         </a>
                       </div>
-                    )}
+                    )*/}
                   </div>
                 </div>
               </div>
