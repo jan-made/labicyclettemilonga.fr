@@ -27,11 +27,11 @@
       "place": "Tolosa !",
       "newsletter": "Newsletter"
     },
-    "title": "Inscripción para el maratón",
-    "title_": "Las inscripciones están cerradas.",
+    "title_": "Inscripción para el maratón",
+    "title": "Las inscripciones están cerradas.",
     "signup": "Inscribirse",
-    "description": "Principio {{date, datetime}}",
-    "description_": "Nos vemos en la pista de baile!",
+    "description_": "Principio {{date, datetime}}",
+    "description": "Nos vemos en la pista de baile!",
     "newsletter": "Suscríbete para recibir noticias del maratón",
     "djs": "Lxs DJs del maratón:",
     "dj": {
