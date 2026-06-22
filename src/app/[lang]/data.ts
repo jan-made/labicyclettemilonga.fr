@@ -76,8 +76,8 @@ export const milongaDates = [
     ends: new Date(2026, 11, 6, 1, 30, 0),
   },
   {
-    starts: new Date(2027, 0, 9, 19, 15, 0),
-    ends: new Date(2027, 0, 10, 1, 30, 0),
+    starts: new Date(2027, 0, 3, 19, 15, 0),
+    ends: new Date(2027, 0, 4, 1, 30, 0),
   },
   {
     starts: new Date(2027, 1, 6, 19, 15, 0),
@@ -88,12 +88,12 @@ export const milongaDates = [
     ends: new Date(2027, 2, 14, 1, 30, 0),
   },
   {
-    starts: new Date(2027, 3, 10, 19, 15, 0),
-    ends: new Date(2027, 3, 11, 1, 30, 0),
+    starts: new Date(2027, 3, 11, 19, 15, 0),
+    ends: new Date(2027, 3, 12, 1, 30, 0),
   },
   {
-    starts: new Date(2027, 4, 1, 19, 15, 0),
-    ends: new Date(2027, 4, 2, 1, 30, 0),
+    starts: new Date(2027, 4, 9, 19, 15, 0),
+    ends: new Date(2027, 4, 10, 1, 30, 0),
   },
   {
     starts: new Date(2027, 5, 12, 19, 15, 0),
