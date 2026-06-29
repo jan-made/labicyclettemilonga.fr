@@ -16,7 +16,7 @@
         "react": "19.2.7",
         "react-dom": "19.2.7",
         "react-leaflet": "^5.0.0",
-        "swiper": "^12.2.0",
+        "swiper": "^14.0.0",
         "tailwind-merge": "^3.6.0",
       },
       "devDependencies": {
@@ -753,7 +753,7 @@
 
     "supports-preserve-symlinks-flag": ["supports-preserve-symlinks-flag@1.0.0", "", {}, "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="],
 
-    "swiper": ["swiper@12.2.0", "", {}, "sha512-K8uXsBZU6ME97Ia3xbBge8IRCnR1lOmIILzvY/jGVic7dSTQ530s3uO8RvXbPUtkkXLWIwmZLRPbtDxRWVAFdg=="],
+    "swiper": ["swiper@14.0.0", "", {}, "sha512-F6DXjC+GKt8WGvutu+35FIZO9iZkde+XxDwFqfw0tlFijDwfG7DikHYUiFQKqIYEp25q8TQSqI3Nh2+bHxs2uA=="],
 
     "tailwind-merge": ["tailwind-merge@3.6.0", "", {}, "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w=="],
 
