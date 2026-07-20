@@ -44,7 +44,7 @@ jobs:
       - name: Lint project
         run: bun run lint
       - name: Run linters
-        uses: wearerequired/lint-action@v2
+        uses: wearerequired/lint-action@v3
         with:
           auto_fix: true
           prettier: true
