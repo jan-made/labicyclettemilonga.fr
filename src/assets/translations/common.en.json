@@ -8,7 +8,7 @@
     "submenu": {
       "introduction": "Presentation",
       "next": "Next Bicyclette milonga",
-      "schedule": "All the dates 25-26",
+      "schedule": "All the dates 26-27",
       "location": "Location",
       "newsletter": "Newsletter"
     },
@@ -16,7 +16,7 @@
     "dateTime": "is on {{starts, datetime}} until {{ends, datetime}}",
     "subtitle": "Welcome! Our supercharged cycling team is waiting for you at TRAC, a beautiful location in the heart of historical Toulouse, with its oak floor and its outstanding sound system. Guest DJs playing 100% traditional tango, homemade sweet and savory dishes prepared by our chefs, and fun games are part of the program. Price: €10 or €8 if need be.",
     "description": "Our next invited DJ!",
-    "plan": "All the season 25-26",
+    "plan": "All the season 26-27",
     "newsletter": "Subscribe for marathon news"
   },
   "marathon": {
