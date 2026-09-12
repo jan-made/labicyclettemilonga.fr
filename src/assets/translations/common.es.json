@@ -8,7 +8,7 @@
     "submenu": {
       "introduction": "Presentación",
       "next": "Próxima Bicyclette milonga",
-      "schedule": "Temporada 25-26",
+      "schedule": "Temporada 26-27",
       "location": "Donde",
       "newsletter": "Newsletter"
     },
@@ -16,7 +16,7 @@
     "dateTime": "el {{starts, datetime}} hasta {{ends, datetime}}",
     "subtitle": "¡Bienvenido! Nuestro equipo de ciclistas entusiasmados le espera en la sala TRAC, en el corazón histórico de Toulouse, con su piso de roble y su increíble sistema de sonido. DJs invitados 100% tradicionales, comida casera elaborada por nuestros chefs y juegos chistosos. Entrada: 10€ u 8€ si es necesario",
     "description": "¡Nuestrx próximx DJ invitadx!",
-    "plan": "Toda la temporada 25-26",
+    "plan": "Toda la temporada 26-27",
     "newsletter": "Suscríbete para recibir noticias de la milonga"
   },
   "marathon": {

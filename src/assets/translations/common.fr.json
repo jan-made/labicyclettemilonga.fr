@@ -8,7 +8,7 @@
     "submenu": {
       "introduction": "Présentation",
       "next": "Prochaine Bicyclette milonga",
-      "schedule": "Toutes les dates 25-26",
+      "schedule": "Toutes les dates 26-27",
       "location": "L'adresse",
       "newsletter": "Newsletter"
     },
@@ -16,7 +16,7 @@
     "dateTime": "le {{starts, datetime}} jusqu'à {{ends, datetime}}",
     "subtitle": "Bienvenue ! Notre équipe de cyclistes survoltés t'attend dans la salle TRAC en plein cœur du Toulouse historique, avec son plancher en chêne et sa sono incroyable. Des djs invités 100% tradis, de la nourriture maison concoctée par nos chef.fe.s, et des jeux potaches. PAF : 10€ ou 8€ si besoin",
     "description": "Notre prochain.e dj invité.e !",
-    "plan": "Toute la saison 25-26",
+    "plan": "Toute la saison 26-27",
     "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos"
   },
   "marathon": {
