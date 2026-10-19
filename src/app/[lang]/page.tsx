@@ -109,10 +109,10 @@ export default function GenericHomePage({ params }: { params: Params }) {
         <div className='flex items-center justify-center py-4 text-center'>
           <div className='my-14 justify-center'>
             <Image
-              src='/img/milongas/nextmilongadj.jpg'
-              width={1080}
-              height={1080}
-              alt='Next Milonga DJ'
+              src='/img/milongas/milonga-2026-11-07.jpg'
+              width={2048}
+              height={1430}
+              alt='La Bicyclette Milonga, samedi 7 novembre 2026'
             />
           </div>
         </div>
