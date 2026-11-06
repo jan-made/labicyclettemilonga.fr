@@ -1,6 +1,10 @@
 import { useSyncExternalStore } from 'react';
 
-export const currentYear = new Date().getFullYear();
+// BUILD_TIME is inlined by next.config.ts, so the server and the browser
+// bundles share the same build year.
+export const currentYear = new Date(
+  process.env.BUILD_TIME ?? Date.now()
+).getFullYear();
 export const unComputedHeaderHeight = 158;
 
 const noopSubscribe = () => () => {};
