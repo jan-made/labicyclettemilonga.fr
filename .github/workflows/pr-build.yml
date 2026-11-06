@@ -67,3 +67,6 @@ jobs:
         with:
           auto_fix: true
           prettier: true
+      # The action only formats its own extension list; check every file Prettier covers.
+      - name: Check formatting
+        run: bun run format
