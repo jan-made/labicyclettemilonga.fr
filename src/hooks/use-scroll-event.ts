@@ -58,3 +58,41 @@ export default function useScrollEvent() {
     scrollHeight,
   };
 }
+
+/**
+ * Returns whether the page is scrolled at least `threshold` pixels.
+ * Only re-renders when the threshold is crossed.
+ */
+export function useScrollThreshold(threshold: number) {
+  const [passed, setPassed] = useState(false);
+
+  useLayoutEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const root = document.scrollingElement || document.documentElement;
+    let rafId: number | null = null;
+
+    const measure = () => {
+      rafId = null;
+      setPassed(root.scrollTop >= threshold);
+    };
+
+    const onScroll = () => {
+      if (rafId != null) return;
+      rafId = requestAnimationFrame(measure);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+
+    queueMicrotask(onScroll);
+
+    return () => {
+      if (rafId != null) cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [threshold]);
+
+  return passed;
+}

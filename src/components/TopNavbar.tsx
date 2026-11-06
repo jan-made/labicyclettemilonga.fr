@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import IconifyIcon from './wrappers/IconifyIcon.tsx';
 import { cn } from '@/helpers/cn.ts';
-import useScrollEvent from '@/hooks/use-scroll-event.ts';
+import { useScrollThreshold } from '@/hooks/use-scroll-event.ts';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import Logo from '@/components/Logo.tsx';
 import { useState } from 'react';
@@ -24,15 +24,13 @@ export default function TopNavbar({
 }) {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
-  const { scrollY } = useScrollEvent();
+  const isSticky = useScrollThreshold(50);
   const { t } = useTranslation({ lng: lang, ns: 'components' });
   const langPrefix = getLangPrefix(lang);
 
   const currentRoute = pathname.startsWith(langPrefix)
     ? pathname.substring(langPrefix.length)
     : pathname;
-
-  const isSticky = scrollY >= 50;
 
   const wrapperRef = useOutside(() => setNav(false));
 
