@@ -1,0 +1,249 @@
+{
+  "menu": {
+    "milonga": "Milonga",
+    "marathon": "Marathon",
+    "team": "L'équipe"
+  },
+  "milonga": {
+    "submenu": {
+      "introduction": "Présentation",
+      "next": "Prochaine Bicyclette milonga",
+      "schedule": "Toutes les dates 26-27",
+      "location": "L'adresse",
+      "newsletter": "Newsletter"
+    },
+    "title": "Prochaine Bicyclette Milonga",
+    "dateTime": "le {{starts, datetime}} jusqu'à {{ends, datetime}}",
+    "subtitle": "Bienvenue ! Notre équipe de cyclistes survoltés t'attend dans la salle TRAC en plein cœur du Toulouse historique, avec son plancher en chêne et sa sono incroyable. Des djs invités 100% tradis, de la nourriture maison concoctée par nos chef.fe.s, et des jeux potaches. PAF : 10€ ou 8€ si besoin",
+    "description": "Notre prochain.e dj invité.e !",
+    "plan": "Toute la saison 26-27",
+    "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos"
+  },
+  "marathon": {
+    "submenu": {
+      "introduction": "Inscription",
+      "timetable": "Le programme",
+      "djs": "Les DJs",
+      "place": "Le lieu",
+      "links": "Les liens utiles",
+      "newsletter": "Newsletter"
+    },
+    "title_": "Inscription au marathon de la Bicyclette",
+    "title": "Les inscriptions pour le marathon sont closes.",
+    "signup": "S'inscrire",
+    "description_": "début le {{date, datetime}}",
+    "description": "Rendez-vous sur la piste de danse.",
+    "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos",
+    "djs": "Les DJs du marathon",
+    "dj": {
+      "1": {
+        "title": "TDJ Oleksandra KOTELNYTSKA (Ukraine)",
+        "time": "Vendredi soir - SET JEANNIE LONGO THE FIRST",
+        "medailon": "En tant que DJ de tango, je crois qu’il n’est tout simplement pas possible de ne pas faire jouer au moins une tanda de Troilo toutes les trois heures. J’apprécie le lien que je tisse avec les danseurs et la gratitude que je lis dans leur regard. Comme de nombreux DJ de tango, je classe la musique qui n’est pas du tango en deux groupes : les cortinas et tout le reste. Ma passion m’a mené à créer le festival Tango Remolino où les DJ sont les principales vedettes. Je suis d’ailleurs constamment à la recherche de DJ talentueux dans le monde entier. Trouver un équilibre entre cette passion et ma vie en Ukraine en temps de guerre où j’élève  mes trois enfants n’est pas facile, mais cela renforce mon engagement et mon intuition en tant que DJ. Mes années d’expérience me permettent de savoir exactement quoi faire jouer pour garder l’énergie sur la piste de danse, puisant dans les tangos intemporels de l’âge d’or."
+      },
+      "2": {
+        "title": "TDJ Mélanie JULIAN (Lyon France)",
+        "time": "Samedi aprèm - SET RAYMOND POULIDOR THE ÉTERNEL SECOND",
+        "medailon": "Mélanie est une DJ lyonnaise reconnue depuis une dizaine d’années pour sa sélection musicale traditionnelle et généreuse. Très investie dans le tango, elle voyage régulièrement dans de nombreux marathons, encuentros et milongas en Europe, ce qui lui permet de proposer une sélection musicale affinée et populaire. Elle a à cœur de partager aux danseurs une palette musicale aux rythmes et émotions variés, principalement orientée sur les tangos de l’âge d’or des grands orchestres, faisant la part belle aux tangos de Juan d’Arienzo, Carlos di Sarli, Anibal Troilo, et Osvaldo Pugliese… Tout en n’oubliant pas les orchestres de Miguel Calo ou Pedro Laurenz par exemple."
+      },
+      "3": {
+        "title": "TDJ Stefan OK (Allemagne)",
+        "time": "Samedi soir - SET LOUIS AMSTRONG THE DOPED",
+        "medailon": "Je suis un DJ de tango international de Halle (Allemagne) ayant musicalisé plus de 200 événements dans 24 pays et 6 continents. Après plusieurs années passées à danser et à écouter des tangos, j’ai commencé à musicaliser en 2009. Depuis, je crée mes sets de DJ autour des classiques de l’âge d’or du tango argentin de 1937 à 1947. Je suis reconnu pour mon excellent sens du rythme et mon aptitude à créer des dynamiques qui touchent les danseurs. En tant que passionné de l’histoire du tango argentin, j’adore écouter des tangos des années 20 et 30 ayant une structure rythmique marquée. Je les incorpore parfois pour mettre un peu de piquant dans mon set. Lors des mes séjours à Buenos Aires et à Berlin, j’ai aussi découvert les mélodies romantiques des années 40 et 50. Mes orchestres préférés sont Di Sarli et D’Arienzo. J’aime faire jouer un mélange complémentaire de rythmes et de mélodies pour que tous les danseurs puissent s’y retrouver."
+      },
+      "4": {
+        "title": "TDJ Nicolas ARRIBAT (Toulouse France)",
+        "time": "Dimanche matin - SET A SUNDAY BIKE RIDE",
+        "medailon": "C'est notre DJ local ! DJ parisien depuis 2010 et DJ international depuis 2015, Nicolas Arribat vit à présent à Toulouse, où il enseigne le tango et co-organise la milonga La Bicyclette et le Chimichurri Tango Weekend. Il se chargera de vous réveiller en douceur le dimanche matin, pour que la fête continue !"
+      },
+      "5": {
+        "title": "TDJ Benoit LEROUGE (Marseille France)",
+        "time": "Despedida - SET THE RED LANTERN IN THE PINK CITY",
+        "medailon": "Benoit « le Rouge » propose une musique axée sur les rythmes rapides, puisant principalement dans l’immense répertoire du tango argentin. Il dispose de nombreux titres inédits, restaurés, quelquefois mixés, par ses propres soins. Il pense que le bal est un moment social que l'on peut influencer à l'aide de tandas construites de manière homogène. En apportant un maximum de changement entre chaque tanda (couleur, humeur, époque, rythme), il crée la surprise et pousse les danseurs vers de nouveaux domaines."
+      }
+    },
+    "timetable": "Bienvenue !",
+    "timetable-description": "Notre équipe de bicyclettistes enjoué.e.s organise son deuxième marathon de la Bicyclette dans le cœur historique de Toulouse. 5 djs internationaux, 27h de tango 100% tradi, 120 danseuses et danseurs, 90€. Nous avons hâte de vous y retrouver !",
+    "timetables": [
+      {
+        "title": "Vendredi",
+        "inner": [
+          {
+            "time": "",
+            "description": ""
+          },
+          {
+            "time": "20h-2h30",
+            "description": "SET JEANNIE LONGO THE FIRST - TDJ Oleksandra KOTELNYTSKA (Ukraine)"
+          }
+        ]
+      },
+      {
+        "title": "Samedi",
+        "inner": [
+          {
+            "time": "10h-12h",
+            "description": "Balade dans Toulouse avec Richard."
+          },
+          {
+            "time": "13h30-18h30",
+            "description": "SET RAYMOND POULIDOR THE ÉTERNEL SECOND - TDJ Mélanie JULIAN (Lyon France)"
+          },
+          {
+            "time": "18h30-19h30",
+            "description": "Apéro dans le Jardin des plantes"
+          },
+          {
+            "time": "18h30-21h",
+            "description": "SET AGAINST THE WATCH - TDJ Nicolas ARRIBAT (Toulouse France)"
+          },
+          {
+            "time": "21h-2h30",
+            "description": "SET LOUIS AMSTRONG THE DOPED - TDJ Stefan OK (Allemagne)"
+          }
+        ]
+      },
+      {
+        "title": "Dimanche",
+        "inner": [
+          {
+            "time": "11h-13h",
+            "description": "ATELIER ROLFING avec Asaf"
+          },
+          {
+            "time": "11h-14h",
+            "description": "SET A SUNDAY BIKE RIDE - TDJ Nicolas ARRIBAT (Toulouse France)"
+          },
+          {
+            "time": "14h-19h",
+            "description": "SET THE RED LANTERN IN THE PINK CITY - TDJ Benoit LEROUGE (Marseille France)"
+          },
+          {
+            "time": "19h-00h",
+            "description": "AFTER à La Dos, 4 av de Rangueil (PAF 10€)."
+          }
+        ]
+      }
+    ],
+    "links": {
+      "title": "Liens utiles",
+      "guide": "Le guide du marathonien",
+      "shared-accommodation": "Hébergement chez un.e toulousain.e",
+      "car-sharing": "Covoiturage",
+      "last-year": "Le marathon de l'année dernière",
+      "rowing": "Aviron"
+    },
+    "afterparty": {
+      "title": "After party: milonga La Dos",
+      "description": "4 Av. de Rangueil, 31400 Toulouse"
+    }
+  },
+  "team": {
+    "title": "Le collectif de la Bicyclette - Milonga & Marathon",
+    "submenu": {},
+    "members": [
+      {
+        "image": "mapie.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Mapie",
+        "role": "Cuisine & Administration",
+        "main": ""
+      },
+      {
+        "image": "serguei.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Serguei",
+        "role": "Cuisine & Bar",
+        "main": ""
+      },
+      {
+        "image": "pau-nico.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Pauline & Nico",
+        "role": "Programmation & Création des visuels & Déco",
+        "main": ""
+      },
+      {
+        "image": "gentiane-yasmine.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Gentiane & Yasmine",
+        "role": "Orga des bénévoles & Sensibilisation contre les violences sexistes",
+        "main": ""
+      },
+      {
+        "image": "honza.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Honza",
+        "role": "Comptabilité & Informatique",
+        "main": ""
+      },
+      {
+        "image": "christine.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Christine",
+        "role": "Repérage resto et hôtels & Déco",
+        "main": ""
+      },
+      {
+        "image": "daniel.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Daniel",
+        "role": "Repérage resto et hôtels",
+        "main": ""
+      },
+      {
+        "image": "celine.jpg",
+        "width": 500,
+        "height": 500,
+        "name": "Céline",
+        "role": "Agendas",
+        "main": ""
+      }
+    ]
+  },
+  "place": {
+    "title": "Ô Toulouse !",
+    "salle": "Le TRAC est une salle historique de rock à Toulouse. 120m² de plancher chêne sur lambourde, une sono incroyable, une mezzanine de part et d'autre, une deuxième salle pour se détendre, un bar, deux vestiaires. Ce lieu exceptionnel se situe en plein cœur de la ville historique.",
+    "jardin": "Écrin de nature situé à deux pas de notre salle, vous aurez la possibilité de profiter du Jardin des Plantes tout le week-end. Pique-niques et apéro en prévision !",
+    "garonne": "Toulouse est une ville incroyablement belle ! Nous vous proposerons une balade dans la ville et sur les bords de Garonne le samedi matin.",
+    "food": "Des en-cas vous seront servis tout le long du week-end. Chef Sergueï sélectionnera des produits occitans : fromage, charcuterie, douceurs, fruits, vin, bières, nous avons en Occitanie l'embarras du choix !"
+  },
+  "map": {
+    "title": "La Bicycletta milonga",
+    "description": "43 Rue Alfred Dumeril, 31 400 Toulouse",
+    "google-link": "Open in Google maps"
+  },
+  "footer": {
+    "made-by": "Organisé par ",
+    "follow-us": "Suis-nous",
+    "number": "L'association n°",
+    "siren": "SIREN",
+    "iban": "IBAN",
+    "swift": "SWIFT"
+  },
+  "venue": {
+    "title": "Lieu ",
+    "address": "TRAC L'Ecole",
+    "address2": "43 Rue Alfred Dumeril",
+    "city": "31 400 Toulouse"
+  },
+  "association": {
+    "name": "Tangobrique",
+    "address": "Appartement 10 Bâtiment A",
+    "address2": "209 Avenue de Castres",
+    "city": "31 500 Toulouse",
+    "number": "W313039421",
+    "siren": "937601219",
+    "iban": "FR76 1313 5000 8008 0098 0985 785",
+    "swift": "CEPAFRPP313",
+    "show-details": "Afficher les informations de facturation",
+    "hide-details": "Masquer les informations de facturation"
+  }
+}
