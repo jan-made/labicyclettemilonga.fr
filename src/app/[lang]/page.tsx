@@ -1,7 +1,7 @@
 'use client';
 
 import { defaultLocale } from '@/config/i18n.ts';
-import { use } from 'react';
+import { use, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Params } from '@/types/props.ts';
@@ -21,9 +21,33 @@ export default function GenericHomePage({ params }: { params: Params }) {
 
   const { t } = useTranslation({ lng: lang });
 
-  const today = new Date();
+  // `now` starts at the build time (inlined via next.config.ts) so the static
+  // HTML and the first client render select the same event; the real time is
+  // only read after mount.
+  const [now, setNow] = useState<Date>(
+    () => new Date(process.env.BUILD_TIME ?? 0)
+  );
 
-  const nextMilonga = milongaDates.find((x) => x.ends > today);
+  useEffect(() => {
+    const timer = setTimeout(() => setNow(new Date()), 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const nextMilonga = milongaDates.find((x) => x.ends > now);
+
+  // Re-evaluate the selection when the current event ends (clamped to the
+  // maximum setTimeout delay; a re-check before the end is harmless).
+  useEffect(() => {
+    if (nextMilonga === undefined) {
+      return;
+    }
+    const delay = Math.min(
+      Math.max(nextMilonga.ends.getTime() - Date.now(), 0),
+      2_147_483_647
+    );
+    const timer = setTimeout(() => setNow(new Date()), delay);
+    return () => clearTimeout(timer);
+  }, [now, nextMilonga]);
 
   return (
     <>
