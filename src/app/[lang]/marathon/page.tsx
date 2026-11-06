@@ -410,6 +410,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
             suppressHydrationWarning={true}
             data-w-type='embedded'
             src='https://sugu5.mjt.lu/wgt/sugu5/x690/form?c=5ea5ef34'
+            title={t('marathon.newsletter')}
             className='min-h-[650px] w-full'
           ></iframe>
 
