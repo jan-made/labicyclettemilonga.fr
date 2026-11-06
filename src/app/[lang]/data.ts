@@ -1,4 +1,14 @@
-export const milongaDates = [
+export interface MilongaDate {
+  starts: Date;
+  ends: Date;
+  image?: {
+    src: string;
+    width: number;
+    height: number;
+  };
+}
+
+export const milongaDates: MilongaDate[] = [
   {
     starts: new Date(2024, 10, 17, 17, 0, 0),
     ends: new Date(2024, 10, 17, 22, 30, 0),
@@ -70,6 +80,11 @@ export const milongaDates = [
   {
     starts: new Date(2026, 10, 7, 19, 30, 0),
     ends: new Date(2026, 10, 8, 1, 30, 0),
+    image: {
+      src: '/img/milongas/milonga-2026-11-07.jpg',
+      width: 2048,
+      height: 1430,
+    },
   },
   {
     starts: new Date(2026, 11, 5, 19, 30, 0),

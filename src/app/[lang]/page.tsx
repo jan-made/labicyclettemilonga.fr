@@ -130,16 +130,28 @@ export default function GenericHomePage({ params }: { params: Params }) {
           </h2>
         </div>
         <div className='basis-full'></div>
-        <div className='flex items-center justify-center py-4 text-center'>
-          <div className='my-14 justify-center'>
-            <Image
-              src='/img/milongas/milonga-2026-11-07.jpg'
-              width={2048}
-              height={1430}
-              alt='La Bicyclette Milonga, samedi 7 novembre 2026'
-            />
+        {nextMilonga?.image !== undefined && (
+          <div className='flex items-center justify-center py-4 text-center'>
+            <div className='my-14 justify-center'>
+              <Image
+                src={nextMilonga.image.src}
+                width={nextMilonga.image.width}
+                height={nextMilonga.image.height}
+                alt={t('milonga.image-alt', {
+                  date: nextMilonga.starts,
+                  formatParams: {
+                    date: {
+                      weekday: 'long',
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    },
+                  },
+                })}
+              />
+            </div>
           </div>
-        </div>
+        )}
       </section>
       <section
         id='schedule'
@@ -157,7 +169,7 @@ export default function GenericHomePage({ params }: { params: Params }) {
               width={1600}
               height={1151}
               className='h-auto w-full max-w-4xl'
-              alt='Milonga schedule'
+              alt={t('milonga.plan-alt')}
             />
           </div>
         </div>
