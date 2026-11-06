@@ -4,6 +4,7 @@ import Link from 'next/link';
 import IconifyIcon from './wrappers/IconifyIcon.tsx';
 import { cn } from '@/helpers/cn.ts';
 import useScrollEvent from '@/hooks/use-scroll-event.ts';
+import { useTranslation } from '@/hooks/use-translation.ts';
 import Logo from '@/components/Logo.tsx';
 import { useState } from 'react';
 import { Locale } from '@/config/i18n.ts';
@@ -24,6 +25,7 @@ export default function TopNavbar({
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
   const { scrollY } = useScrollEvent();
+  const { t } = useTranslation({ lng: lang, ns: 'components' });
   const langPrefix = getLangPrefix(lang);
 
   const currentRoute = pathname.startsWith(langPrefix)
@@ -49,6 +51,7 @@ export default function TopNavbar({
           <Link
             href={{ pathname: langPrefix }}
             className='inline-block whitespace-nowrap'
+            aria-label={t('logo.home-link')}
           >
             <Logo className='fill-bicyclette w-28' />
           </Link>

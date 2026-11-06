@@ -17,6 +17,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
   const headHeight = useHeaderHeight(unComputedHeaderHeight);
 
   const { t } = useTranslation({ lng: lang });
+  const { t: tc } = useTranslation({ lng: lang, ns: 'components' });
 
   return (
     <footer
@@ -30,6 +31,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
             <Link
               href={{ pathname: langPrefix }}
               className='mb-10 flex max-w-64 items-center justify-center'
+              aria-label={tc('logo.home-link')}
             >
               <Logo className='fill-bicyclette' />
             </Link>
