@@ -96,7 +96,8 @@
       "guide": "The marathoner's guide",
       "shared-accommodation": "Accommodation in Toulouse",
       "car-sharing": "Car sharing",
-      "rowing": "Rowing"
+      "rowing": "Rowing",
+      "guide-unavailable": "Not available yet"
     }
   }
 }

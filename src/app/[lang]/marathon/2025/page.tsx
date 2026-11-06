@@ -327,17 +327,11 @@ export default function GenericMarathon2025Page({
           {tMarathon('2025.links.title')}
         </h1>
         <ul className='max-w- list-disc'>
-          <li className='my-2 text-xl hover:underline'>
-            <a
-              href=''
-              onClick={(e) => {
-                e.preventDefault();
-                alert('TODO');
-              }}
-              rel='nofollow'
-            >
-              {tMarathon('2025.links.guide')}
-            </a>
+          <li className='my-2 text-xl'>
+            {tMarathon('2025.links.guide')}{' '}
+            <span className='text-base text-gray-500 italic'>
+              ({tMarathon('2025.links.guide-unavailable')})
+            </span>
           </li>
         </ul>
       </section>

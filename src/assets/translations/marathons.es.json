@@ -96,7 +96,8 @@
       "guide": "La guía del maratonista",
       "shared-accommodation": "Alojamiento en casa de un/a tolosano/a",
       "car-sharing": "Coche compartido",
-      "rowing": "Remo"
+      "rowing": "Remo",
+      "guide-unavailable": "Próximamente"
     }
   }
 }
