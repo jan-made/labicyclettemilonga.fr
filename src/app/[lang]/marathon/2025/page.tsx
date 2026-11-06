@@ -355,6 +355,7 @@ export default function GenericMarathon2025Page({
           <iframe
             suppressHydrationWarning={true}
             data-w-type='embedded'
+            title={tMarathon('2025.newsletter')}
             src='https://sugu5.mjt.lu/wgt/sugu5/x690/form?c=5ea5ef34'
             className='min-h-[650px] w-full'
           ></iframe>
