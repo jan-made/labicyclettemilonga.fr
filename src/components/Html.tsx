@@ -16,7 +16,7 @@ export default function Html({
       lang={lang}
       dir={dir(lang)}
     >
-      <body>{children}</body>
+      {children}
     </html>
   );
 }
