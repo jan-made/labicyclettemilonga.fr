@@ -110,7 +110,9 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
                   {t('footer.made-by')}: {t('association.name')}
                 </h5>
                 <div>
-                  <a
+                  <button
+                    type='button'
+                    aria-expanded={associationDetailShow}
                     className='cursor-pointer text-sm italic underline'
                     onClick={() =>
                       setAssociationDetailShow(!associationDetailShow)
@@ -119,7 +121,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
                     {associationDetailShow
                       ? t('association.hide-details')
                       : t('association.show-details')}
-                  </a>
+                  </button>
                 </div>
                 <div
                   className={cn(
