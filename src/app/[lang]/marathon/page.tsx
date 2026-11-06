@@ -358,7 +358,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               href=''
               onClick={(e) => {
                 e.preventDefault();
-                alert('Not available yet');
+                alert(t('marathon.links.not-available'));
               }}
               rel='nofollow'
             >
