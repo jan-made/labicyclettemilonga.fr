@@ -33,6 +33,7 @@
     "signup": "Signup",
     "description_": "starts {{date, datetime}}",
     "description": "See you on the dancefloor.",
+    "banner-alt": "Bicyclette Tango Marathon, Toulouse city center",
     "newsletter": "Subscribe for marathon news",
     "djs": "Marathon DJs:",
     "dj": {
@@ -142,9 +143,13 @@
   "place": {
     "title": "Toulouse, the pink city!",
     "salle": "TRAC is a longstanding Rock dance venue in Toulouse. 120m² of oak floorboards, an incredible sound system, a mezzanine on each side, a second room to relax, a bar, two dressing rooms. This exceptional venue is located in the heart of the historical city.",
+    "salle-alt": "The TRAC dance hall",
     "jardin": "You’ll have the opportunity to enjoy a natural setting, the Jardin des plantes, located steps away from our venue. Ideal for picnics and aperitifs!",
+    "jardin-alt": "The Jardin des plantes",
     "garonne": "The banks of the Garonne are also nearby, and so we couldn’t resist offering you a different perspective of the city through a rowing session on the river, on Saturday morning! Reservation and payment to be made at the time of registration.",
-    "food": "Homemade savory and sweet snacks will be served throughout the weekend. Chef Sergueï will be selecting products from the Occitanie region: cheese, deli meats, fruit, wine, beer, we're spoilt for choice!"
+    "garonne-alt": "The banks of the Garonne",
+    "food": "Homemade savory and sweet snacks will be served throughout the weekend. Chef Sergueï will be selecting products from the Occitanie region: cheese, deli meats, fruit, wine, beer, we're spoilt for choice!",
+    "food-alt": "Homemade food"
   },
   "map": {
     "title": "La Bicycletta milonga",

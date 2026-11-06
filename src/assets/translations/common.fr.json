@@ -33,6 +33,7 @@
     "signup": "S'inscrire",
     "description_": "début le {{date, datetime}}",
     "description": "Rendez-vous sur la piste de danse.",
+    "banner-alt": "Bicyclette Tango Marathon, centre-ville de Toulouse",
     "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos",
     "djs": "Les DJs du marathon",
     "dj": {
@@ -212,9 +213,13 @@
   "place": {
     "title": "Ô Toulouse !",
     "salle": "Le TRAC est une salle historique de rock à Toulouse. 120m² de plancher chêne sur lambourde, une sono incroyable, une mezzanine de part et d'autre, une deuxième salle pour se détendre, un bar, deux vestiaires. Ce lieu exceptionnel se situe en plein cœur de la ville historique.",
+    "salle-alt": "La salle du TRAC",
     "jardin": "Écrin de nature situé à deux pas de notre salle, vous aurez la possibilité de profiter du Jardin des Plantes tout le week-end. Pique-niques et apéro en prévision !",
+    "jardin-alt": "Le Jardin des plantes",
     "garonne": "Toulouse est une ville incroyablement belle ! Nous vous proposerons une balade dans la ville et sur les bords de Garonne le samedi matin.",
-    "food": "Des en-cas vous seront servis tout le long du week-end. Chef Sergueï sélectionnera des produits occitans : fromage, charcuterie, douceurs, fruits, vin, bières, nous avons en Occitanie l'embarras du choix !"
+    "garonne-alt": "Les bords de Garonne",
+    "food": "Des en-cas vous seront servis tout le long du week-end. Chef Sergueï sélectionnera des produits occitans : fromage, charcuterie, douceurs, fruits, vin, bières, nous avons en Occitanie l'embarras du choix !",
+    "food-alt": "Nourriture faite maison"
   },
   "map": {
     "title": "La Bicycletta milonga",
