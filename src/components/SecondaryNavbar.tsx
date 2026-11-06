@@ -57,14 +57,21 @@ export default function SecondaryNavbar({
           ? currentRoute.substring(0, i)
           : currentRoute;
 
-    const routeSubmenu = t(`${routeKey}.submenu`, {
+    const routeSubmenu: unknown = t(`${routeKey}.submenu`, {
       returnObjects: true,
-    }) as Record<string, string>;
+    });
 
     const items: Array<Submenu> = [];
 
+    // Missing translations (e.g. on /404) return the key as a string.
+    if (typeof routeSubmenu !== 'object' || routeSubmenu === null) {
+      return items;
+    }
+
     let submenuId = 0;
-    for (const [key, value] of Object.entries(routeSubmenu)) {
+    for (const [key, value] of Object.entries(
+      routeSubmenu as Record<string, string>
+    )) {
       items.push({
         id: submenuId,
         key,
