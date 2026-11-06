@@ -98,6 +98,12 @@
       "car-sharing": "Car sharing",
       "rowing": "Rowing",
       "guide-unavailable": "Not available yet"
+    },
+    "images": {
+      "banner": "Bicyclette Tango Marathon, Toulouse city center",
+      "salle": "The dance hall",
+      "jardin": "The garden",
+      "food": "The food"
     }
   }
 }

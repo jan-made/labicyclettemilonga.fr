@@ -98,6 +98,12 @@
       "car-sharing": "Covoiturage",
       "rowing": "Aviron",
       "guide-unavailable": "Bientôt disponible"
+    },
+    "images": {
+      "banner": "Bicyclette Tango Marathon, centre-ville de Toulouse",
+      "salle": "La salle de bal",
+      "jardin": "Le jardin",
+      "food": "Le repas"
     }
   }
 }
