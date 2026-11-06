@@ -13,5 +13,8 @@
   },
   "logo": {
     "home-link": "La Bicyclette milonga – home"
+  },
+  "map": {
+    "marker": "Map marker"
   }
 }

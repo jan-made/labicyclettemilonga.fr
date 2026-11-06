@@ -13,5 +13,8 @@
   },
   "logo": {
     "home-link": "La Bicyclette milonga – accueil"
+  },
+  "map": {
+    "marker": "Repère sur la carte"
   }
 }
