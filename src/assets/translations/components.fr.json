@@ -16,5 +16,8 @@
   },
   "map": {
     "marker": "Repère sur la carte"
+  },
+  "menu": {
+    "toggle": "Menu"
   }
 }

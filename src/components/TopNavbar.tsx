@@ -62,6 +62,8 @@ export default function TopNavbar({
             <button
               className='hs-collapse-toggle ml-8 inline-flex h-10 w-12 items-center justify-center rounded-md border bg-gray-300'
               type='button'
+              aria-label={t('menu.toggle')}
+              aria-expanded={nav}
               onClick={() => setNav(!nav)}
             >
               <IconifyIcon
