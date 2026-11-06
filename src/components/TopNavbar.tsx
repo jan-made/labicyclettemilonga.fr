@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import IconifyIcon from './wrappers/IconifyIcon.tsx';
 import { cn } from '@/helpers/cn.ts';
-import useScrollEvent from '@/hooks/use-scroll-event.ts';
+import { useScrollThreshold } from '@/hooks/use-scroll-event.ts';
+import { useTranslation } from '@/hooks/use-translation.ts';
 import Logo from '@/components/Logo.tsx';
 import { useState } from 'react';
 import { Locale } from '@/config/i18n.ts';
@@ -23,14 +24,13 @@ export default function TopNavbar({
 }) {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
-  const { scrollY } = useScrollEvent();
+  const isSticky = useScrollThreshold(50);
+  const { t } = useTranslation({ lng: lang, ns: 'components' });
   const langPrefix = getLangPrefix(lang);
 
   const currentRoute = pathname.startsWith(langPrefix)
     ? pathname.substring(langPrefix.length)
     : pathname;
-
-  const isSticky = scrollY >= 50;
 
   const wrapperRef = useOutside(() => setNav(false));
 
@@ -49,6 +49,7 @@ export default function TopNavbar({
           <Link
             href={{ pathname: langPrefix }}
             className='inline-block whitespace-nowrap'
+            aria-label={t('logo.home-link')}
           >
             <Logo className='fill-bicyclette w-28' />
           </Link>
@@ -61,6 +62,8 @@ export default function TopNavbar({
             <button
               className='hs-collapse-toggle ml-8 inline-flex h-10 w-12 items-center justify-center rounded-md border bg-gray-300'
               type='button'
+              aria-label={t('menu.toggle')}
+              aria-expanded={nav}
               onClick={() => setNav(!nav)}
             >
               <IconifyIcon

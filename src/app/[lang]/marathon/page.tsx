@@ -55,7 +55,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
                     src='/img/marathon/2026/bandeau-marathon-site.png'
                     width={701}
                     height={394}
-                    alt='Bicyclette Tango Marathon Toulouse city center'
+                    alt={t('marathon.banner-alt')}
                   />
                 </div>
               </div>
@@ -292,7 +292,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               src='/img/marathon/2026/salle.jpg'
               width={836}
               height={836}
-              alt='salle'
+              alt={t('place.salle-alt')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:mt-0 md:ml-12 md:w-5/12 md:text-left lg:ml-12'>
@@ -306,7 +306,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               src='/img/marathon/2026/jardin.jpg'
               width={836}
               height={836}
-              alt='jardin'
+              alt={t('place.jardin-alt')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:order-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:order-1 md:mt-0 md:mr-12 md:w-5/12 md:text-left lg:mr-12'>
@@ -320,7 +320,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               src='/img/marathon/2026/Garonne.jpg'
               width={836}
               height={836}
-              alt='Garonne'
+              alt={t('place.garonne-alt')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:mt-0 md:ml-12 md:w-5/12 md:text-left lg:ml-12'>
@@ -334,7 +334,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               src='/img/marathon/2026/food.jpg'
               width={836}
               height={836}
-              alt='food'
+              alt={t('place.food-alt')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:order-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:order-1 md:mt-0 md:mr-12 md:w-5/12 md:text-left lg:mr-12'>
@@ -358,7 +358,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
               href=''
               onClick={(e) => {
                 e.preventDefault();
-                alert('Not available yet');
+                alert(t('marathon.links.not-available'));
               }}
               rel='nofollow'
             >
@@ -410,6 +410,7 @@ export default function GenericMarathonPage({ params }: { params: Params }) {
             suppressHydrationWarning={true}
             data-w-type='embedded'
             src='https://sugu5.mjt.lu/wgt/sugu5/x690/form?c=5ea5ef34'
+            title={t('marathon.newsletter')}
             className='min-h-[650px] w-full'
           ></iframe>
 

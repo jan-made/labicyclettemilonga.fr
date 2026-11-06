@@ -1,7 +1,7 @@
 'use client';
 
 import { defaultLocale } from '@/config/i18n.ts';
-import { use } from 'react';
+import { use, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Params } from '@/types/props.ts';
@@ -21,9 +21,33 @@ export default function GenericHomePage({ params }: { params: Params }) {
 
   const { t } = useTranslation({ lng: lang });
 
-  const today = new Date();
+  // `now` starts at the build time (inlined via next.config.ts) so the static
+  // HTML and the first client render select the same event; the real time is
+  // only read after mount.
+  const [now, setNow] = useState<Date>(
+    () => new Date(process.env.BUILD_TIME ?? 0)
+  );
 
-  const nextMilonga = milongaDates.find((x) => x.ends > today);
+  useEffect(() => {
+    const timer = setTimeout(() => setNow(new Date()), 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const nextMilonga = milongaDates.find((x) => x.ends > now);
+
+  // Re-evaluate the selection when the current event ends (clamped to the
+  // maximum setTimeout delay; a re-check before the end is harmless).
+  useEffect(() => {
+    if (nextMilonga === undefined) {
+      return;
+    }
+    const delay = Math.min(
+      Math.max(nextMilonga.ends.getTime() - Date.now(), 0),
+      2_147_483_647
+    );
+    const timer = setTimeout(() => setNow(new Date()), delay);
+    return () => clearTimeout(timer);
+  }, [now, nextMilonga]);
 
   return (
     <>
@@ -106,16 +130,28 @@ export default function GenericHomePage({ params }: { params: Params }) {
           </h2>
         </div>
         <div className='basis-full'></div>
-        <div className='flex items-center justify-center py-4 text-center'>
-          <div className='my-14 justify-center'>
-            <Image
-              src='/img/milongas/milonga-2026-11-07.jpg'
-              width={2048}
-              height={1430}
-              alt='La Bicyclette Milonga, samedi 7 novembre 2026'
-            />
+        {nextMilonga?.image !== undefined && (
+          <div className='flex items-center justify-center py-4 text-center'>
+            <div className='my-14 justify-center'>
+              <Image
+                src={nextMilonga.image.src}
+                width={nextMilonga.image.width}
+                height={nextMilonga.image.height}
+                alt={t('milonga.image-alt', {
+                  date: nextMilonga.starts,
+                  formatParams: {
+                    date: {
+                      weekday: 'long',
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    },
+                  },
+                })}
+              />
+            </div>
           </div>
-        </div>
+        )}
       </section>
       <section
         id='schedule'
@@ -133,7 +169,7 @@ export default function GenericHomePage({ params }: { params: Params }) {
               width={1600}
               height={1151}
               className='h-auto w-full max-w-4xl'
-              alt='Milonga schedule'
+              alt={t('milonga.plan-alt')}
             />
           </div>
         </div>
@@ -158,6 +194,7 @@ export default function GenericHomePage({ params }: { params: Params }) {
             suppressHydrationWarning={true}
             data-w-type='embedded'
             src='https://sugu5.mjt.lu/wgt/sugu5/x507/form?c=0f08a2f3'
+            title={t('milonga.submenu.newsletter')}
             className='min-h-[650px] w-full'
           ></iframe>
 

@@ -96,7 +96,14 @@
       "guide": "Le guide du marathonien",
       "shared-accommodation": "Hébergement chez un.e toulousain.e",
       "car-sharing": "Covoiturage",
-      "rowing": "Aviron"
+      "rowing": "Aviron",
+      "guide-unavailable": "Bientôt disponible"
+    },
+    "images": {
+      "banner": "Bicyclette Tango Marathon, centre-ville de Toulouse",
+      "salle": "La salle de bal",
+      "jardin": "Le jardin",
+      "food": "Le repas"
     }
   }
 }

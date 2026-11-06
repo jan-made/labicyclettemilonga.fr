@@ -8,12 +8,21 @@ import 'swiper/css';
 import { Locale } from '@/config/i18n.ts';
 import { cn } from '@/helpers/cn.ts';
 import { useTranslation } from '@/hooks/use-translation.ts';
-import { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import {
+  MouseEvent,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useSyncExternalStore,
+} from 'react';
 import Link from 'next/link';
 import type { Swiper as SwiperClass } from 'swiper/types';
 import { useRouter } from 'next/navigation';
 import { Route } from 'next';
 import useScrollEvent from '@/hooks/use-scroll-event.ts';
+
+const noopSubscribe = () => () => {};
 
 interface Submenu {
   id: number;
@@ -43,6 +52,13 @@ export default function SecondaryNavbar({
     ns: isMarathonNamespace ? 'marathons' : undefined,
   });
   const { scrollY } = useScrollEvent();
+  // false during SSR and hydration, true afterwards: keeps the first client
+  // render identical to the server-rendered HTML.
+  const isHydrated = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  );
 
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
 
@@ -57,14 +73,21 @@ export default function SecondaryNavbar({
           ? currentRoute.substring(0, i)
           : currentRoute;
 
-    const routeSubmenu = t(`${routeKey}.submenu`, {
+    const routeSubmenu: unknown = t(`${routeKey}.submenu`, {
       returnObjects: true,
-    }) as Record<string, string>;
+    });
 
     const items: Array<Submenu> = [];
 
+    // Missing translations (e.g. on /404) return the key as a string.
+    if (typeof routeSubmenu !== 'object' || routeSubmenu === null) {
+      return items;
+    }
+
     let submenuId = 0;
-    for (const [key, value] of Object.entries(routeSubmenu)) {
+    for (const [key, value] of Object.entries(
+      routeSubmenu as Record<string, string>
+    )) {
       items.push({
         id: submenuId,
         key,
@@ -95,7 +118,7 @@ export default function SecondaryNavbar({
 
   const activeIndex = useMemo(
     () => {
-      if (typeof window === 'undefined') return 0;
+      if (!isHydrated) return 0;
 
       const innerHalfHeight = window.innerHeight / 2;
 
@@ -113,7 +136,11 @@ export default function SecondaryNavbar({
 
       return candidate?.id ?? 0;
     },
-    /* eslint-disable-line react-hooks/exhaustive-deps */ [scrollY, submenu]
+    /* eslint-disable-line react-hooks/exhaustive-deps */ [
+      scrollY,
+      submenu,
+      isHydrated,
+    ]
   );
 
   useEffect(() => {

@@ -16,7 +16,9 @@
     "dateTime": "is on {{starts, datetime}} until {{ends, datetime}}",
     "subtitle": "Welcome! Our supercharged cycling team is waiting for you at TRAC, a beautiful location in the heart of historical Toulouse, with its oak floor and its outstanding sound system. Guest DJs playing 100% traditional tango, homemade sweet and savory dishes prepared by our chefs, and fun games are part of the program. Price: €10 or €8 if need be.",
     "description": "Our next invited DJ!",
+    "image-alt": "La Bicyclette Milonga, {{date, datetime}}",
     "plan": "All the season 26-27",
+    "plan-alt": "La Bicyclette Milonga schedule for the 26-27 season",
     "newsletter": "Subscribe for marathon news"
   },
   "marathon": {
@@ -33,6 +35,7 @@
     "signup": "Signup",
     "description_": "starts {{date, datetime}}",
     "description": "See you on the dancefloor.",
+    "banner-alt": "Bicyclette Tango Marathon, Toulouse city center",
     "newsletter": "Subscribe for marathon news",
     "djs": "Marathon DJs:",
     "dj": {
@@ -116,7 +119,7 @@
           },
           {
             "time": "2-7PM",
-            "description": "SET THE RED LANTERN IN THE PINK CITY - TDJ Carmen Maria Hergos (Mexico)"
+            "description": "SET THE RED LANTERN IN THE PINK CITY - TDJ Benoit LEROUGE (Marseille France)"
           },
           {
             "time": "7PM-midnight",
@@ -128,6 +131,7 @@
     "links": {
       "title": "Useful links",
       "guide": "The marathoner's guide",
+      "not-available": "Not available yet",
       "shared-accommodation": "Accommodation in Toulouse",
       "car-sharing": "Car sharing",
       "last-year": "Last year's marathon",
@@ -141,9 +145,13 @@
   "place": {
     "title": "Toulouse, the pink city!",
     "salle": "TRAC is a longstanding Rock dance venue in Toulouse. 120m² of oak floorboards, an incredible sound system, a mezzanine on each side, a second room to relax, a bar, two dressing rooms. This exceptional venue is located in the heart of the historical city.",
+    "salle-alt": "The TRAC dance hall",
     "jardin": "You’ll have the opportunity to enjoy a natural setting, the Jardin des plantes, located steps away from our venue. Ideal for picnics and aperitifs!",
+    "jardin-alt": "The Jardin des plantes",
     "garonne": "The banks of the Garonne are also nearby, and so we couldn’t resist offering you a different perspective of the city through a rowing session on the river, on Saturday morning! Reservation and payment to be made at the time of registration.",
-    "food": "Homemade savory and sweet snacks will be served throughout the weekend. Chef Sergueï will be selecting products from the Occitanie region: cheese, deli meats, fruit, wine, beer, we're spoilt for choice!"
+    "garonne-alt": "The banks of the Garonne",
+    "food": "Homemade savory and sweet snacks will be served throughout the weekend. Chef Sergueï will be selecting products from the Occitanie region: cheese, deli meats, fruit, wine, beer, we're spoilt for choice!",
+    "food-alt": "Homemade food"
   },
   "map": {
     "title": "La Bicycletta milonga",

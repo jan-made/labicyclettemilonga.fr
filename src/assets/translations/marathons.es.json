@@ -4,6 +4,7 @@
       "timetable": "El programa 2025",
       "djs": "Lxs DJs",
       "place": "Tolosa !",
+      "links": "Enlaces útiles",
       "newsletter": "Newsletter"
     },
     "title": "El maratón de la Bicyclette 2025 ha terminado",
@@ -89,6 +90,20 @@
           }
         ]
       }
-    ]
+    ],
+    "links": {
+      "title": "Enlaces útiles",
+      "guide": "La guía del maratonista",
+      "shared-accommodation": "Alojamiento en casa de un/a tolosano/a",
+      "car-sharing": "Coche compartido",
+      "rowing": "Remo",
+      "guide-unavailable": "Próximamente"
+    },
+    "images": {
+      "banner": "Bicyclette Tango Marathon, centro histórico de Toulouse",
+      "salle": "La sala de baile",
+      "jardin": "El jardín",
+      "food": "La comida"
+    }
   }
 }
