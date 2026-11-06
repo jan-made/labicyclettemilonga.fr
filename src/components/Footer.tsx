@@ -1,9 +1,12 @@
-import { currentYear, unComputedHeaderHeight } from '@/common/constants.ts';
+'use client';
+
+import { unComputedHeaderHeight, useCurrentYear } from '@/common/constants.ts';
 import Link from 'next/link';
 import { useHeaderHeight } from '@/hooks/use-header-height.ts';
 
 export default function Footer() {
   const headHeight = useHeaderHeight(unComputedHeaderHeight);
+  const year = useCurrentYear();
 
   return (
     <footer
@@ -13,7 +16,7 @@ export default function Footer() {
     >
       <div className='container m-auto'>
         <p className='text-center text-base font-medium text-gray-400'>
-          {currentYear} ©{' '}
+          {year} ©{' '}
           <Link href='https://labicyclettamilonga.fr'>
             labicyclettamilonga.fr
           </Link>

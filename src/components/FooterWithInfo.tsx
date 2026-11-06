@@ -5,7 +5,7 @@ import Logo from '@/components/Logo.tsx';
 import IconifyIcon from '@/components/wrappers/IconifyIcon.tsx';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Locale } from '@/config/i18n.ts';
-import { currentYear, unComputedHeaderHeight } from '@/common/constants.ts';
+import { unComputedHeaderHeight, useCurrentYear } from '@/common/constants.ts';
 import getLangPrefix from '@/helpers/lang-prefix.ts';
 import { cn } from '@/helpers/cn.ts';
 import { useState } from 'react';
@@ -18,6 +18,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
 
   const { t } = useTranslation({ lng: lang });
   const { t: tc } = useTranslation({ lng: lang, ns: 'components' });
+  const year = useCurrentYear();
 
   return (
     <footer
@@ -154,7 +155,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
         </div>
 
         <p className='text-center text-base font-medium text-gray-400'>
-          {currentYear} ©{' '}
+          {year} ©{' '}
           <Link href='https://labicyclettamilonga.fr'>
             labicyclettamilonga.fr
           </Link>
