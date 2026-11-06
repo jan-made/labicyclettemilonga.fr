@@ -18,10 +18,10 @@ reviews:
     ignore_usernames:
       - dependabot[bot]
   path_filters:
-    - "!bun.lock"
-    - "!public/**"
+    - '!bun.lock'
+    - '!public/**'
   path_instructions:
-    - path: "src/**/*.{ts,tsx}"
+    - path: 'src/**/*.{ts,tsx}'
       instructions: >-
         Next.js site with i18next. Check that new user-facing text goes through translations, that images have alt
         text, and that client components are used only where needed.
