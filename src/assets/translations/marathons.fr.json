@@ -1,0 +1,102 @@
+{
+  "2025": {
+    "submenu": {
+      "timetable": "Le programme 2025",
+      "djs": "Les DJs",
+      "place": "Le lieu",
+      "links": "Lien utiles",
+      "newsletter": "Newsletter"
+    },
+    "title": "Le marathon de la Bicyclette 2025 est passé",
+    "go-to-current": "Aller à l’édition actuelle",
+    "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos",
+    "djs": "Les DJs du marathon 2025",
+    "dj": {
+      "palmer-title": "TDJ Barbara Palmer",
+      "palmer-time": "Vendredi soir - SET JEANNIE LONGO THE FIRST",
+      "palmer": "Danseuse et professeure de tango, Bárbara Palmer dirige et musicalise actuellement la milonga del Puerto et la milonga Dolce Vita à Valence, en Espagne. Depuis 2005, elle a accumulé une vaste expérience en tant qu'organisatrice de milongas à Madrid et à Valence et a également été invitée en tant que DJ de tango à des événements en Espagne et dans d’autres pays d’Europe. C'est avec grand plaisir que nous confions à Bárbara l'ouverture du tout premier marathon de la Bicyclette !!",
+      "rosita-title": "TDJ Rosita Lagos-Diaz",
+      "rosita-time": "Samedi aprèm - SET RAYMOND POULIDOR THE ÉTERNEL SECOND",
+      "rosita": "Rosita musicalise depuis 2017 dans des évènements d’Europe et aux Etats-Unis. Sensible aux énergies de la piste, elle partage avec les danseurs une large palette de rythmes et d’émotions principalement de l’âge d’or. Elle sera aux manettes le samedi après-midi, nous avons hâte Rositaaaaa !",
+      "nocitango-title": "TDJ Paola Nocitango",
+      "nocitango-time": "Samedi soir - SET LOUIS AMSTRONG THE DOPED",
+      "nocitango": "Danseuse de tango et amoureuse de musique et du tango en particulier, Paola a vécu et travaillé en Argentine. Elle est rapidement devenue une TDJ très appréciée pour ses connaissances musicales et sa recherche de la qualité des fichiers musicaux. Souvent présente dans les milongas italiennes, elle est connue pour l'énergie qu'elle parvient à insuffler à ses soirées. Elle est attentive et sensible aux goûts et aux désirs des danseurs avec lesquels elle aime interagir et qui sont sa source d'inspiration. Elle organise également le Tango Beer Marathon à Como, en Italie et l’Avventura Milonguera Peace & Love à Noci et musicalise de nombreux  événements en Italie, en Europe et au-delà. Nous sommes ravis que Paola ait accepté de musicaliser la soirée de samedi !!",
+      "arribat-title": "TDJ Nicolas Arribat",
+      "arribat-time": "Dimanche matin - SET A SUNDAY BIKE RIDE",
+      "arribat": "C'est notre DJ local ! DJ parisien depuis 2010 et DJ international depuis 2015, Nicolas Arribat vit à présent à Toulouse, où il enseigne le tango et co-organise la milonga La Bicyclette et le Chimichurri Tango Weekend. Il se chargera de vous réveiller en douceur le dimanche matin, pour que la fête continue !",
+      "carmen-title": "TDJ Carmen Maria Hergos",
+      "carmen-time": "Despedida - SET THE RED LANTERN IN THE PINK CITY",
+      "carmen": "Carmen est professeure de tango, précurseure du double-rôle et TangoDj d'origine mexicaine. Elle commence à musicaliser en 2012, de façon hebdomadaire, à Barcelone. Appréciant profondément les orchestres de l'Age d'or et toujours à la recherche de vieux trésors, elle n'hésite pas aussi à proposer de nouveaux orchestres si l'énergie de la piste le demande !"
+    },
+    "timetable": "Bienvenue !",
+    "timetable-description": "Notre équipe de bicyclettistes enjoué.e.s organise son premier marathon de la Bicyclette dans le cœur historique de Toulouse. 5 djs internationaux, 27h de tango 100% tradi, 150 danseuses et danseurs, 80€. Voici le programme :",
+    "timetables": [
+      {
+        "title": "Vendredi",
+        "inner": [
+          {
+            "time": "",
+            "description": ""
+          },
+          {
+            "time": "21h-2h30",
+            "description": "SET JEANNIE LONGO THE FIRST - TDJ Barbara Palmer (Espagne)"
+          }
+        ]
+      },
+      {
+        "title": "Samedi",
+        "inner": [
+          {
+            "time": "10h30-12h30",
+            "description": "BALADE À VÉLO dans Toulouse, rdv 10h30 devant la maison du vélo, 12 Bd Bonrepos."
+          },
+          {
+            "time": "14h-18h30",
+            "description": "SET RAYMOND POULIDOR THE ÉTERNEL SECOND - TDJ Rosita Lagos-Diaz (Lyon)"
+          },
+          {
+            "time": "18h30-19h30",
+            "description": "Apéro dans le Jardin des plantes"
+          },
+          {
+            "time": "18h30-21h",
+            "description": "SET AGAINST THE WATCH - TDJ Nicolas Arribat (Toulouse)"
+          },
+          {
+            "time": "21h-2h30",
+            "description": "SET LOUIS AMSTRONG THE DOPED - TDJ Paola Nocitango (Italie)"
+          }
+        ]
+      },
+      {
+        "title": "Dimanche",
+        "inner": [
+          {
+            "time": "10h-12h",
+            "description": "ATELIER TECHNIQUE ALEXANDER avec Élodie et Maïté, rdv 10h devant la salle Trac, prix 5€."
+          },
+          {
+            "time": "10h-14h",
+            "description": "SET A SUNDAY BIKE RIDE - TDJ Nicolas Arribat (Toulouse)"
+          },
+          {
+            "time": "14h-19h",
+            "description": "SET THE RED LANTERN IN THE PINK CITY - TDJ Carmen Maria Hergos (Mexique)"
+          },
+          {
+            "time": "19h30-00h",
+            "description": "AFTER - EL ONCE 11 rue Louis Renault, Balma - TDJ Virginia Uva (PAF 6€)"
+          }
+        ]
+      }
+    ],
+    "links": {
+      "title": "Lien utiles",
+      "guide": "Le guide du marathonien",
+      "shared-accommodation": "Hébergement chez un.e toulousain.e",
+      "car-sharing": "Covoiturage",
+      "rowing": "Aviron"
+    }
+  }
+}

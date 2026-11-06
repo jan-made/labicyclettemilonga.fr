@@ -1,0 +1,14 @@
+{
+  "time-duration": {
+    "seconds_one": "Seconde",
+    "seconds_other": "Secondes",
+    "minutes_one": "Minute",
+    "minutes_other": "Minutes",
+    "hours_one": "Heure",
+    "hours_other": "Heures",
+    "days_one": "Jour",
+    "days_other": "Jours",
+    "months_one": "Mois",
+    "months_other": "Mois"
+  }
+}
