@@ -10,5 +10,14 @@
     "days_other": "Days",
     "months_one": "Month",
     "months_other": "Months"
+  },
+  "logo": {
+    "home-link": "La Bicyclette milonga – home"
+  },
+  "map": {
+    "marker": "Map marker"
+  },
+  "menu": {
+    "toggle": "Menu"
   }
 }

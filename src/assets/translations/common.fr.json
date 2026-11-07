@@ -16,7 +16,9 @@
     "dateTime": "le {{starts, datetime}} jusqu'à {{ends, datetime}}",
     "subtitle": "Bienvenue ! Notre équipe de cyclistes survoltés t'attend dans la salle TRAC en plein cœur du Toulouse historique, avec son plancher en chêne et sa sono incroyable. Des djs invités 100% tradis, de la nourriture maison concoctée par nos chef.fe.s, et des jeux potaches. PAF : 10€ ou 8€ si besoin",
     "description": "Notre prochain.e dj invité.e !",
+    "image-alt": "La Bicyclette Milonga, {{date, datetime}}",
     "plan": "Toute la saison 26-27",
+    "plan-alt": "Calendrier de la Bicyclette Milonga, saison 26-27",
     "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos"
   },
   "marathon": {
@@ -33,6 +35,7 @@
     "signup": "S'inscrire",
     "description_": "début le {{date, datetime}}",
     "description": "Rendez-vous sur la piste de danse.",
+    "banner-alt": "Bicyclette Tango Marathon, centre-ville de Toulouse",
     "newsletter": "Inscris-toi à la newsletter pour avoir toutes les infos",
     "djs": "Les DJs du marathon",
     "dj": {
@@ -128,6 +131,7 @@
     "links": {
       "title": "Liens utiles",
       "guide": "Le guide du marathonien",
+      "not-available": "Pas encore disponible",
       "shared-accommodation": "Hébergement chez un.e toulousain.e",
       "car-sharing": "Covoiturage",
       "last-year": "Le marathon de l'année dernière",
@@ -211,14 +215,18 @@
   "place": {
     "title": "Ô Toulouse !",
     "salle": "Le TRAC est une salle historique de rock à Toulouse. 120m² de plancher chêne sur lambourde, une sono incroyable, une mezzanine de part et d'autre, une deuxième salle pour se détendre, un bar, deux vestiaires. Ce lieu exceptionnel se situe en plein cœur de la ville historique.",
+    "salle-alt": "La salle du TRAC",
     "jardin": "Écrin de nature situé à deux pas de notre salle, vous aurez la possibilité de profiter du Jardin des Plantes tout le week-end. Pique-niques et apéro en prévision !",
+    "jardin-alt": "Le Jardin des plantes",
     "garonne": "Toulouse est une ville incroyablement belle ! Nous vous proposerons une balade dans la ville et sur les bords de Garonne le samedi matin.",
-    "food": "Des en-cas vous seront servis tout le long du week-end. Chef Sergueï sélectionnera des produits occitans : fromage, charcuterie, douceurs, fruits, vin, bières, nous avons en Occitanie l'embarras du choix !"
+    "garonne-alt": "Les bords de Garonne",
+    "food": "Des en-cas vous seront servis tout le long du week-end. Chef Sergueï sélectionnera des produits occitans : fromage, charcuterie, douceurs, fruits, vin, bières, nous avons en Occitanie l'embarras du choix !",
+    "food-alt": "Nourriture faite maison"
   },
   "map": {
     "title": "La Bicycletta milonga",
     "description": "43 Rue Alfred Dumeril, 31 400 Toulouse",
-    "google-link": "Open in Google maps"
+    "google-link": "Ouvrir dans Google maps"
   },
   "footer": {
     "made-by": "Organisé par ",

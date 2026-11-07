@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ['lucide-react'],
   trailingSlash: true,
+  env: {
+    // Inlined identically into server and client bundles so the static HTML
+    // and the first client render select the same upcoming event.
+    BUILD_TIME: new Date().toISOString(),
+  },
   typedRoutes: true,
   experimental: {},
   images: {

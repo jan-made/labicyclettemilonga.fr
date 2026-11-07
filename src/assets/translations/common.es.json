@@ -16,7 +16,9 @@
     "dateTime": "el {{starts, datetime}} hasta {{ends, datetime}}",
     "subtitle": "¡Bienvenido! Nuestro equipo de ciclistas entusiasmados le espera en la sala TRAC, en el corazón histórico de Toulouse, con su piso de roble y su increíble sistema de sonido. DJs invitados 100% tradicionales, comida casera elaborada por nuestros chefs y juegos chistosos. Entrada: 10€ u 8€ si es necesario",
     "description": "¡Nuestrx próximx DJ invitadx!",
+    "image-alt": "La Bicyclette Milonga, {{date, datetime}}",
     "plan": "Toda la temporada 26-27",
+    "plan-alt": "Calendario de La Bicyclette Milonga, temporada 26-27",
     "newsletter": "Suscríbete para recibir noticias de la milonga"
   },
   "marathon": {
@@ -32,6 +34,7 @@
     "signup": "Inscribirse",
     "description_": "Principio {{date, datetime}}",
     "description": "Nos vemos en la pista de baile!",
+    "banner-alt": "Bicyclette Tango Marathon, centro de Toulouse",
     "newsletter": "Suscríbete para recibir noticias del maratón",
     "djs": "Lxs DJs del maratón:",
     "dj": {
@@ -123,6 +126,7 @@
     "links": {
       "title": "Enlaces útiles",
       "guide": "La guía del maratonista",
+      "not-available": "Todavía no disponible",
       "shared-accommodation": "Alojamiento con un/a toulousain/a",
       "car-sharing": "Coche compartido",
       "last-year": "El maratón del año pasado",
@@ -136,9 +140,13 @@
   "place": {
     "title": "Tolosa, la ciudad rosa!",
     "salle": "TRAC es un lugar histórico de rock en Toulouse. 120m² de tarima de roble sobre vigas, un increíble sistema de sonido, un entrepiso a cada lado, una segunda sala para relajarse, un bar, dos vestuarios. Este lugar excepcional está ubicado en el corazón de la ciudad histórica.",
+    "salle-alt": "La sala del TRAC",
     "jardin": "Un entorno natural situado a un paso de nuestra sede, tendrás la oportunidad de disfrutar del Jardín des Plantes durante todo el fin de semana. ¡Picnics y aperitivos planeados!",
+    "jardin-alt": "El Jardín des Plantes",
     "garonne": "Las orillas del Garona también están cerca. Así que te ofrecemos la posibilidad de remar el sábado por la mañana. Reserva y pago en el momento de la inscripción.",
-    "food": "Durante todo el fin de semana se servirán tentempiés. El chef Sergueï seleccionará productos de la región de Occitanie: queso, charcutería, dulces, fruta, vino, cerveza... ¡lo que quiera, lo tenemos!"
+    "garonne-alt": "Las orillas del Garona",
+    "food": "Durante todo el fin de semana se servirán tentempiés. El chef Sergueï seleccionará productos de la región de Occitanie: queso, charcutería, dulces, fruta, vino, cerveza... ¡lo que quiera, lo tenemos!",
+    "food-alt": "Comida casera"
   },
   "map": {
     "title": "La Bicyclette milonga",

@@ -5,7 +5,7 @@ import Logo from '@/components/Logo.tsx';
 import IconifyIcon from '@/components/wrappers/IconifyIcon.tsx';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Locale } from '@/config/i18n.ts';
-import { currentYear, unComputedHeaderHeight } from '@/common/constants.ts';
+import { unComputedHeaderHeight, useCurrentYear } from '@/common/constants.ts';
 import getLangPrefix from '@/helpers/lang-prefix.ts';
 import { cn } from '@/helpers/cn.ts';
 import { useState } from 'react';
@@ -17,6 +17,8 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
   const headHeight = useHeaderHeight(unComputedHeaderHeight);
 
   const { t } = useTranslation({ lng: lang });
+  const { t: tc } = useTranslation({ lng: lang, ns: 'components' });
+  const year = useCurrentYear();
 
   return (
     <footer
@@ -30,6 +32,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
             <Link
               href={{ pathname: langPrefix }}
               className='mb-10 flex max-w-64 items-center justify-center'
+              aria-label={tc('logo.home-link')}
             >
               <Logo className='fill-bicyclette' />
             </Link>
@@ -108,7 +111,9 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
                   {t('footer.made-by')}: {t('association.name')}
                 </h5>
                 <div>
-                  <a
+                  <button
+                    type='button'
+                    aria-expanded={associationDetailShow}
                     className='cursor-pointer text-sm italic underline'
                     onClick={() =>
                       setAssociationDetailShow(!associationDetailShow)
@@ -117,7 +122,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
                     {associationDetailShow
                       ? t('association.hide-details')
                       : t('association.show-details')}
-                  </a>
+                  </button>
                 </div>
                 <div
                   className={cn(
@@ -150,7 +155,7 @@ export default function FooterWithInfo({ lang }: { lang: Locale }) {
         </div>
 
         <p className='text-center text-base font-medium text-gray-400'>
-          {currentYear} ©{' '}
+          {year} ©{' '}
           <Link href='https://labicyclettamilonga.fr'>
             labicyclettamilonga.fr
           </Link>

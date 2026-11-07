@@ -57,7 +57,7 @@ export default function GenericMarathon2025Page({
                     src='/img/marathon/2025/bandeau-marathon-site.png'
                     width={701}
                     height={394}
-                    alt='Bicyclette Tango Marathon Toulouse city center'
+                    alt={tMarathon('2025.images.banner')}
                   />
                 </div>
               </div>
@@ -158,7 +158,7 @@ export default function GenericMarathon2025Page({
             src='/img/marathon/2025/dj-palmer.jpg'
             width={836}
             height={836}
-            alt='TDJ Barbara Palmer'
+            alt={tMarathon('2025.dj.palmer-title')}
             className='max-w-96 object-scale-down pr-2 pb-2 md:w-6/12 lg:w-5/12'
           />
           <p className='mt-4 text-center md:mt-0 md:ml-12 md:w-5/12 md:text-left lg:ml-12'>
@@ -179,7 +179,7 @@ export default function GenericMarathon2025Page({
             src='/img/marathon/2025/dj-rosita.jpg'
             width={836}
             height={836}
-            alt='TDJ Rosita Lagos-Diaz'
+            alt={tMarathon('2025.dj.rosita-title')}
             className='max-w-96 object-scale-down pr-2 pb-2 md:order-2 md:w-6/12 lg:w-5/12'
           />
           <p className='mt-4 text-center md:order-1 md:mt-0 md:mr-12 md:w-5/12 md:text-left lg:mr-12'>
@@ -200,7 +200,7 @@ export default function GenericMarathon2025Page({
             src='/img/marathon/2025/dj-nocitango.jpg'
             width={836}
             height={836}
-            alt='TDJ Paola Nocitango'
+            alt={tMarathon('2025.dj.nocitango-title')}
             className='max-w-96 object-scale-down pr-2 pb-2 md:w-6/12 lg:w-5/12'
           />
           <p className='mt-4 text-center md:mt-0 md:ml-12 md:w-5/12 md:text-left lg:ml-12'>
@@ -221,7 +221,7 @@ export default function GenericMarathon2025Page({
             src='/img/marathon/2025/dj-arribat.jpg'
             width={836}
             height={836}
-            alt='TDJ Nicolas Arribat'
+            alt={tMarathon('2025.dj.arribat-title')}
             className='max-w-96 object-scale-down pr-2 pb-2 md:order-2 md:w-6/12 lg:w-5/12'
           />
           <p className='mt-4 text-center md:order-1 md:mt-0 md:mr-12 md:w-5/12 md:text-left lg:mr-12'>
@@ -242,7 +242,7 @@ export default function GenericMarathon2025Page({
             src='/img/marathon/2025/dj-carmen.jpg'
             width={836}
             height={836}
-            alt='TDJ Carmen Maria Hergos'
+            alt={tMarathon('2025.dj.carmen-title')}
             className='max-w-96 object-scale-down pr-2 pb-2 md:w-6/12 lg:w-5/12'
           />
           <p className='mt-4 text-center md:mt-0 md:ml-12 md:w-5/12 md:text-left lg:ml-12'>
@@ -266,7 +266,7 @@ export default function GenericMarathon2025Page({
               src='/img/marathon/2025/salle.jpg'
               width={836}
               height={836}
-              alt='salle'
+              alt={tMarathon('2025.images.salle')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:mt-0 md:ml-12 md:w-5/12 md:text-left lg:ml-12'>
@@ -280,7 +280,7 @@ export default function GenericMarathon2025Page({
               src='/img/marathon/2025/jardin.jpg'
               width={836}
               height={836}
-              alt='jardin'
+              alt={tMarathon('2025.images.jardin')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:order-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:order-1 md:mt-0 md:mr-12 md:w-5/12 md:text-left lg:mr-12'>
@@ -308,7 +308,7 @@ export default function GenericMarathon2025Page({
               src='/img/marathon/2025/food.jpg'
               width={836}
               height={836}
-              alt='food'
+              alt={tMarathon('2025.images.food')}
               className='max-w-96 object-scale-down pr-2 pb-2 md:order-2 md:w-6/12 lg:w-5/12'
             />
             <p className='mt-4 text-center text-gray-300 md:order-1 md:mt-0 md:mr-12 md:w-5/12 md:text-left lg:mr-12'>
@@ -327,17 +327,11 @@ export default function GenericMarathon2025Page({
           {tMarathon('2025.links.title')}
         </h1>
         <ul className='max-w- list-disc'>
-          <li className='my-2 text-xl hover:underline'>
-            <a
-              href=''
-              onClick={(e) => {
-                e.preventDefault();
-                alert('TODO');
-              }}
-              rel='nofollow'
-            >
-              {tMarathon('2025.links.guide')}
-            </a>
+          <li className='my-2 text-xl'>
+            {tMarathon('2025.links.guide')}{' '}
+            <span className='text-base text-gray-500 italic'>
+              ({tMarathon('2025.links.guide-unavailable')})
+            </span>
           </li>
         </ul>
       </section>
@@ -361,6 +355,7 @@ export default function GenericMarathon2025Page({
           <iframe
             suppressHydrationWarning={true}
             data-w-type='embedded'
+            title={tMarathon('2025.newsletter')}
             src='https://sugu5.mjt.lu/wgt/sugu5/x690/form?c=5ea5ef34'
             className='min-h-[650px] w-full'
           ></iframe>

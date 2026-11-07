@@ -7,6 +7,8 @@ export default function Logo({ className }: { className: ClassNameProps }) {
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 1500 1000'
       className={cn(className)}
+      aria-hidden='true'
+      focusable='false'
     >
       <image
         href='/img/bicycle.png'

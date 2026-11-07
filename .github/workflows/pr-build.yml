@@ -14,8 +14,7 @@ on:
 
 # Down scope as necessary via https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
 permissions:
-  checks: write
-  contents: write
+  contents: read
 
 env:
   NEXT_TELEMETRY_DISABLED: 1
@@ -29,7 +28,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: 1.4.4
       - name: Restore cache
         uses: actions/cache@v6
         with:
@@ -43,8 +42,34 @@ jobs:
         run: bun install
       - name: Lint project
         run: bun run lint
+      # Fork PRs and merge queue runs get a read-only token, so they cannot push fixes or create annotations.
+      - name: Check formatting
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+        run: bun run format
+
+  format-autofix:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: blacksmith-4vcpu-ubuntu-2404
+    permissions:
+      checks: write
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - name: Install dependencies
+        run: bun install
       - name: Run linters
         uses: wearerequired/lint-action@v3
         with:
           auto_fix: true
           prettier: true
+          # YAML is left out: the token cannot push changes to workflow files.
+          # The read-only check below still covers it.
+          prettier_extensions: css,html,js,json,jsx,md,sass,scss,ts,tsx,vue
+      # The action only formats its own extension list; check every file Prettier covers.
+      - name: Check formatting
+        run: bun run format
