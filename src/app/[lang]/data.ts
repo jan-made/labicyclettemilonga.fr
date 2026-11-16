@@ -88,7 +88,12 @@ export const milongaDates: MilongaDate[] = [
   },
   {
     starts: new Date(2026, 11, 5, 19, 30, 0),
-    ends: new Date(2026, 11, 6, 1, 30, 0),
+    ends: new Date(2026, 11, 6, 1, 0, 0),
+    image: {
+      src: '/img/milongas/milonga-2026-12-05.jpg',
+      width: 1600,
+      height: 1209,
+    },
   },
   {
     starts: new Date(2027, 0, 3, 19, 30, 0),
