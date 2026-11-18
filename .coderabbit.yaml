@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-# CodeRabbit PR review settings for the labicyclettemilonga.fr Next.js site.
+# CodeRabbit PR review settings for the labicyclettemilonga.fr Next.js site. Guideline files such as AGENTS.md are read as the coding guidelines.
 language: en-US
 reviews:
   profile: chill
