@@ -1,11 +1,13 @@
 export interface MilongaDate {
   starts: Date;
   ends: Date;
-  image?: {
+  images?: {
     src: string;
     width: number;
     height: number;
-  };
+    // Translation key of the alt text; defaults to `milonga.image-alt`.
+    alt?: string;
+  }[];
 }
 
 export const milongaDates: MilongaDate[] = [
@@ -80,20 +82,30 @@ export const milongaDates: MilongaDate[] = [
   {
     starts: new Date(2026, 10, 7, 19, 30, 0),
     ends: new Date(2026, 10, 8, 1, 30, 0),
-    image: {
-      src: '/img/milongas/milonga-2026-11-07.jpg',
-      width: 2048,
-      height: 1430,
-    },
+    images: [
+      {
+        src: '/img/milongas/milonga-2026-11-07.jpg',
+        width: 2048,
+        height: 1430,
+      },
+    ],
   },
   {
     starts: new Date(2026, 11, 5, 19, 30, 0),
     ends: new Date(2026, 11, 6, 1, 0, 0),
-    image: {
-      src: '/img/milongas/milonga-2026-12-05.jpg',
-      width: 1600,
-      height: 1209,
-    },
+    images: [
+      {
+        src: '/img/milongas/milonga-2026-12-05.jpg',
+        width: 1600,
+        height: 1209,
+      },
+      {
+        src: '/img/milongas/weekend-tango-2026-12-program.jpg',
+        width: 1299,
+        height: 1299,
+        alt: 'milonga.weekend-program-alt',
+      },
+    ],
   },
   {
     starts: new Date(2027, 0, 3, 19, 30, 0),
