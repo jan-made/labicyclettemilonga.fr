@@ -130,14 +130,17 @@ export default function GenericHomePage({ params }: { params: Params }) {
           </h2>
         </div>
         <div className='basis-full'></div>
-        {nextMilonga?.image !== undefined && (
-          <div className='flex items-center justify-center py-4 text-center'>
+        {nextMilonga?.images?.map((image) => (
+          <div
+            key={image.src}
+            className='flex basis-full items-center justify-center py-4 text-center'
+          >
             <div className='my-14 justify-center'>
               <Image
-                src={nextMilonga.image.src}
-                width={nextMilonga.image.width}
-                height={nextMilonga.image.height}
-                alt={t('milonga.image-alt', {
+                src={image.src}
+                width={image.width}
+                height={image.height}
+                alt={t(image.alt ?? 'milonga.image-alt', {
                   date: nextMilonga.starts,
                   formatParams: {
                     date: {
@@ -151,7 +154,7 @@ export default function GenericHomePage({ params }: { params: Params }) {
               />
             </div>
           </div>
-        )}
+        ))}
       </section>
       <section
         id='schedule'
