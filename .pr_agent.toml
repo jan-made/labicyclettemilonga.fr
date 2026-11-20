@@ -1,0 +1,43 @@
+# PR-Agent settings for this repository. PR-Agent reads this file from the
+# default branch (main).
+# Options: https://github.com/The-PR-Agent/pr-agent/blob/v0.50.0/pr_agent/settings/configuration.toml
+
+[github_app]
+# Review draft pull requests too, and run /describe and /review again after each push by a person.
+# The PR-Agent host skips pull requests and pushes from bot accounts.
+feedback_on_draft_pr = true
+handle_push_trigger = true
+
+[pr_reviewer]
+num_max_findings = 5
+extra_instructions = """\
+Repository rules. Check every rule in each area the diff touches. A changed line that breaks one is a finding, even when the code runs.
+
+Static export (`src/app/`, `next.config.ts`):
+- The site is a static export (`output: 'export'`): flag a route handler, middleware, server action, `cookies()` or `headers()`, and a dynamic segment without `generateStaticParams`.
+- French pages live in `(home)/` and wrap the `[lang]/` page; English and Spanish come from `[lang]/`. A new `[lang]/` page has its `(home)/` wrapper.
+- Time-dependent output starts from `process.env.BUILD_TIME` and reads the clock only after mount, as `[lang]/page.tsx` does.
+- Leaflet maps load through `next/dynamic` with `ssr: false`.
+
+Translations (`src/app/`, `src/components/`, `src/assets/translations/`, `src/config/i18n.ts`):
+- User-facing text goes through `t()`. A new key exists in the `fr`, `en` and `es` files of its namespace; a new namespace is registered in `i18n.ts` for all three locales.
+- Every `Image` and `img` has an `alt`; descriptive alt text goes through `t()`.
+
+Components (`src/app/`, `src/components/`):
+- Internal links build their path with `getLangPrefix` from `src/helpers/lang-prefix.ts`.
+- `'use client'` appears only in components that use state, effects or browser APIs.
+"""
+
+[pr_code_suggestions]
+# Publish only suggestions scored 5 or higher (0-10).
+suggestions_score_threshold = 5
+# Drop a suggestion whose score could not be computed; the default 7 would publish it.
+score_on_reflection_failure = 4
+extra_instructions = "Prefer existing project helpers and patterns over new abstractions."
+
+[ignore]
+# Generated code and lock files. Replaces the default list; keep vendor/** first.
+glob = [
+    "vendor/**",
+    "next-env.d.ts",
+]
