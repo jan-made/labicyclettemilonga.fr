@@ -1,0 +1,40 @@
+# PR-Agent settings for this repository. PR-Agent reads this file from the
+# default branch (main).
+# Options: https://github.com/The-PR-Agent/pr-agent/blob/v0.50.0/pr_agent/settings/configuration.toml
+
+[github_app]
+# Review draft pull requests too, and run /describe and /review again on every push.
+feedback_on_draft_pr = true
+handle_push_trigger = true
+
+[pr_reviewer]
+num_max_findings = 5
+extra_instructions = """\
+Also check these rules:
+
+Static export:
+- `next.config.ts` sets `output: 'export'`. No route handlers, middleware, server actions, `cookies()` or `headers()`; a dynamic segment needs `generateStaticParams`.
+- French pages live in `src/app/(home)/` and wrap the `src/app/[lang]/` page; English and Spanish come from `[lang]`. A new `[lang]` page needs its `(home)` wrapper.
+- Internal links build their path with `getLangPrefix` from `src/helpers/lang-prefix.ts`.
+- Time-dependent output starts from `process.env.BUILD_TIME` and reads the clock only after mount, as `src/app/[lang]/page.tsx` does. Leaflet maps load through `next/dynamic` with `ssr: false`.
+
+Translations:
+- User-facing text goes through `t()`. A new key exists in the `fr`, `en` and `es` files of its namespace in `src/assets/translations/`; a new namespace is registered in `src/config/i18n.ts` for all three locales.
+- Every `Image` and `img` has `alt` text; descriptive alt text is translated.
+
+Code style:
+- Add `'use client'` only to components that use state, effects or browser APIs.
+- Merge Tailwind classes with `cn` from `src/helpers/cn.ts`. `bun run lint` and `bun run format` pass.
+"""
+
+[pr_code_suggestions]
+# Publish only suggestions scored 5 or higher (0-10).
+suggestions_score_threshold = 5
+extra_instructions = "Prefer existing project helpers and patterns over new abstractions. Do not suggest edits to the generated `next-env.d.ts`."
+
+[ignore]
+# Generated code and lock files. Replaces the default list; keep vendor/** first.
+glob = [
+    "vendor/**",
+    "next-env.d.ts",
+]
