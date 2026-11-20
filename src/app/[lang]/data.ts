@@ -100,10 +100,10 @@ export const milongaDates: MilongaDate[] = [
         height: 1209,
       },
       {
-        src: '/img/milongas/weekend-tango-2026-12-program.jpg',
+        src: '/img/milongas/chimichurri-2026-12-program.jpg',
         width: 1299,
         height: 1299,
-        alt: 'milonga.weekend-program-alt',
+        alt: 'milonga.chimichurri-program-alt',
       },
     ],
   },
