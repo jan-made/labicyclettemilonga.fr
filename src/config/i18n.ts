@@ -18,6 +18,8 @@ export const defaultLocale: Locale = 'fr';
 
 export const i18nOptions = {
   fallbackLng: defaultLocale,
+  // Some translations are empty on purpose and must render nothing.
+  returnEmptyString: true,
   ns: ['common', 'not-found', 'components', 'marathons'],
   defaultNS: 'common',
   preload: locales,
